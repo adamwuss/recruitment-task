@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import Styled from "./Table.styled"
+import Styled from "./Table.styled";
 
 const Table = ({ transactions }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -13,11 +13,11 @@ const Table = ({ transactions }) => {
 
   const handleNextPage = () => {
     setCurrentPage(currentPage + 1);
-  }
+  };
 
   const handlePrevPage = () => {
     setCurrentPage(currentPage - 1);
-  }
+  };
 
   return (
     <Styled.Table>
@@ -45,19 +45,19 @@ const Table = ({ transactions }) => {
             onClick={handlePrevPage}
             disabled={currentPage === 1}
           >
-            {'<'}
+            {"<"}
           </Styled.Button>
           <Styled.Button
             onClick={handleNextPage}
             disabled={currentPage === numberOfPages}
           >
-            {'>'}
+            {">"}
           </Styled.Button>
         </Styled.Pagination>
       </tr>
     </tbody>
     </Styled.Table>
-  )
-}
+  );
+};
 
 export default Table;

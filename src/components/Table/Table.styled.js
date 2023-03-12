@@ -53,4 +53,4 @@ export default {
   Th,
   Button,
   Pagination,
-}
+};

@@ -13,7 +13,7 @@ const TotalPoints = ({ transactions }) => {
         { sumPoints }
       </Styled.TotalPoints>
     </Styled.Text>
-  )
-}
+  );
+};
 
 export default TotalPoints;
