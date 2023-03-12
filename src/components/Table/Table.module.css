@@ -1,0 +1,39 @@
+.table {
+  width: 500px;
+  border-spacing: 0;
+  border: 1px solid #515151;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.td, .th {
+  border-bottom: 1px solid #515151;
+  text-align: left;
+  padding: 16px;
+}
+
+.tr:last-child .td:last-child {
+  text-align: right;
+}
+
+.button {
+  background-color: #191F26;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.button:disabled {
+ color: grey;
+ cursor: default;
+}
+
+.button:disabled:hover {
+  background-color: #191F26;
+}
+
+.button:hover {
+  background-color: #FFFFFF14;
+  border-radius: 25px;
+}
